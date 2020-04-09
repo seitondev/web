@@ -1,0 +1,46 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background: url("../assets/header-background.jpg") no-repeat center;
+    background-size: cover;
+    background-color: rgba(27, 120, 242, 0.4);
+    background-blend-mode: multiply;
+    color: white;
+}
+
+.header-options {
+    height: 7vh;
+    padding-top: 3vh;
+    font-size: 20px;
+}
+
+.header-options a {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.seiton-title {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 108px;
+}
+
+.seiton-title span {
+    border: 2px white solid;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-radius: 10px;
+}
