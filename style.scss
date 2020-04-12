@@ -217,6 +217,90 @@ body {
 }
 
 footer {
+    background-color: black;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10vh;
+    article {
+        background-color: #212121;
+        border-bottom: gray solid 0.1px;
+    }
+    .left {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5vh;
+        padding-bottom: 2vh;
+        .logo {
+            height: 5vh;
+            margin-bottom: 4vh;
+        }
+        .links {
+            a {
+                font-family: sans-serif;
+                padding-left: 0.5vw;
+                padding-right: 0.5vw;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        font-family: sans-serif;
+        color: white;
+        .contacto-mail {
+            display: flex;
+            align-items: center;
+            img {
+                height: 3vh;
+                margin-right: 1vw;
+            }
+        }
+        .contacto-telefono {
+            display: flex;
+            align-items: center;
+            img {
+                height: 3vh;
+                margin-right: 1vw;
+            }
+        }
+    }
+    .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .social-media-links {
+            padding-top: 3vh;
+            display: flex;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+                img {
+                    height: 6vh;
+                }
+            }
+        }
+        .info-web-page {
+            padding-top: 2vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+    }
+}
+
+/* footer {
     width: 100%;
     background-color: #212121;
     border: white solid 1px;
@@ -333,4 +417,4 @@ footer {
         width: 100%;
         height: 100px;
     }
-}
+} */
