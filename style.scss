@@ -217,120 +217,85 @@ body {
 }
 
 footer {
-    width: 100%;
-    background-color: #212121;
-    border: white solid 1px;
-    .principal {
+    background-color: black;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10vh;
+    article {
+        background-color: #212121;
+        border-bottom: gray solid 0.1px;
+    }
+    .left {
         display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
+        flex-direction: column;
+        flex: 1;
         align-items: center;
-        width: 100%;
-        .left {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 33%;
-            .logo {
-                margin: 0 auto;
-                img {
-                    height: 300px;
-                }
-            }
-            .links {
-                margin: 0 auto;
-                a {
-                    display: inline-block;
-                    text-decoration: none;
-                    color: white;
-                    margin-right: 30px;
-                    font-size: 35px;
-                    margin-bottom: 50px;
-                }
-                a:hover {
-                    color: rgb(75, 175, 153);
-                }
-            }
+        justify-content: center;
+        padding-top: 5vh;
+        padding-bottom: 2vh;
+        .logo {
+            height: 5vh;
+            margin-bottom: 4vh;
         }
-        .contacto {
-            display: flex;
-            flex-direction: column;
-            width: 33%;
-            .contacto-mail {
-                margin: 0px auto;
-                display: inline-flex;
-                img {
-                    width: 100px;
-                    height: 100px;
-                    display: inline-flex;
-                    align-items: center;
-                    align-content: center;
-                }
-                p {
-                    margin-left: 50px;
-                    display: inline-flex;
-                    color: white;
-                    font-size: 30px;
-                    align-items: center;
-                    align-content: center;
-                }
-            }
-            .contacto-telefono {
-                margin: 0px auto;
-                display: inline-flex;
-                img {
-                    width: 100px;
-                    height: 100px;
-                    display: inline-flex;
-                    align-items: center;
-                    align-content: center;
-                }
-                p {
-                    margin-left: 50px;
-                    display: inline-flex;
-                    color: white;
-                    font-size: 30px;
-                    align-items: center;
-                    align-content: center;
-                }
-            }
-        }
-        .social-media {
-            margin: 0 auto;
-            margin-top: 50px;
-            display: flex;
-            flex-direction: column;
-            height: 33%;
-            .social-media-links {
-                display: flex;
-                justify-content: space-between;
-                a {
-                    img {
-                        width: 100px;
-                    }
-                }
-                a:hover {
-                    color: rgb(75, 175, 153);
-                }
-            }
-            .info-web-page {
-                p {
-                    margin-top: 20px;
-                    align-items: center;
-                    color: white;
-                    font-size: 25px;
-                    width: 600px;
-                    font-weight: 100;
-                    text-align: center;
-                    margin-top: 100px;
-                }
+        .links {
+            a {
+                font-family: sans-serif;
+                padding-left: 0.5vw;
+                padding-right: 0.5vw;
+                color: white;
+                text-decoration: none;
             }
         }
     }
-    .bottom {
-        color: black;
-        border: 1px solid white;
-        width: 100%;
-        height: 100px;
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        font-family: sans-serif;
+        color: white;
+        .contacto-mail {
+            display: flex;
+            align-items: center;
+            img {
+                height: 3vh;
+                margin-right: 1vw;
+            }
+        }
+        .contacto-telefono {
+            display: flex;
+            align-items: center;
+            img {
+                height: 3vh;
+                margin-right: 1vw;
+            }
+        }
+    }
+    .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .social-media-links {
+            padding-top: 3vh;
+            display: flex;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+                img {
+                    height: 6vh;
+                }
+            }
+        }
+        .info-web-page {
+            padding-top: 2vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
     }
 }
