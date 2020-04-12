@@ -3,6 +3,8 @@ body {
     margin: 0;
 }
 
+/* Header styles */
+
 .header {
     display: flex;
     font-family: sans-serif;
@@ -11,8 +13,9 @@ body {
     justify-items: center;
     background: url("../assets/header-background.jpg") no-repeat center;
     background-size: cover;
-    background-color: rgba(27, 120, 242, 0.4);
+    background-color: rgba(119, 187, 193, 0.9);
     background-blend-mode: multiply;
+    background-attachment: fixed;
     color: white;
 }
 
@@ -20,6 +23,7 @@ body {
     height: 7vh;
     padding-top: 3vh;
     font-size: 20px;
+    max-width: 1000px;
 }
 
 .header-options a {
@@ -34,6 +38,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 108px;
+    max-width: 1000px;
 }
 
 .seiton-title span {
@@ -43,4 +48,39 @@ body {
     padding-top: 2vh;
     padding-bottom: 2vh;
     border-radius: 10px;
+}
+
+/* About us styles */
+
+.aboutus {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutus article {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.aboutus span {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    font-size: 42px;
+}
+
+.aboutus p {
+    width: 60%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 1vh;
+    border-bottom: 2px #77bbc1 solid;
 }
