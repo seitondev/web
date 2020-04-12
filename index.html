@@ -1,28 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Seiton</title>
-        <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
-    </head>
-    <body>
-        <header class="header">
-            <article class="header-options">
-                <a>Acerca de</a>
-                <a>Tecnologias</a>
-                <a>Proyectos</a>
-                <a>Contacto</a>
-            </article>
-            <article class="seiton-title">
-                <span>Seiton</span>
-            </article>
-        </header>
-        <section class="aboutus">
-            <article>
-                <span>Nosotros</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita molestiae animi inventore quae voluptas nemo in iste numquam! Quos amet accusantium rerum iusto dolores consequatur ratione fuga, atque pariatur nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque porro exercitationem officiis eos quaerat hic dolorem illo id culpa aut assumenda, cumque eveniet, optio, tenetur enim architecto possimus impedit voluptatem?</p>
-            </article>
-        </section>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seiton</title>
+    <link rel="stylesheet" href="main-style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <header class="header">
+        <article class="header-options">
+            <a>Acerca de</a>
+            <a>Tecnologias</a>
+            <a>Proyectos</a>
+            <a>Contacto</a>
+        </article>
+        <article class="seiton-title">
+            <span>Seiton</span>
+        </article>
+    </header>
+    <section class="aboutus">
+        <article>
+            <span>Nosotros</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita molestiae animi inventore quae voluptas nemo in iste numquam! Quos amet accusantium rerum iusto dolores consequatur ratione fuga, atque pariatur nesciunt. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Eaque porro exercitationem officiis eos quaerat hic dolorem illo id culpa aut assumenda, cumque eveniet, optio, tenetur enim architecto possimus impedit voluptatem?</p>
+        </article>
+    </section>
+    <section class="workers">
+        <div class="content-father-one">
+            <h2 class="title"> Workers</h2>
+            <br>
+            <div class="childs">
+                <div class="child">
+                    <img src="./css/recurses/Nacho Lima 1x1.jpg" class="imagen" alt="">
+                    <h3>Ignacio Lima</h3>
+                    <p>Desarrollador Full Stack, con amplios conocimientos en React Native y Mobile Devices. Trabaja actualmente en Código del Sur
+                    </p>
+                </div>
+                <div class="child">
+                    <img src="./css/recurses/Maciel Galeano1x1.png" class="imagen" alt="">
+                    <h3>Maciel Galeano</h3>
+                    <p>Auxiliar administrativo contable y desarrollador front end, fotógrafo. Trabaja actualmente en Merck.
+                    </p>
+                </div>
+                <div class="child">
+                    <img src="./css/recurses/Romina Montenegro 1x1.png" class="imagen" alt="">
+                    <h3>Romina Montenegro</h3>
+                    <p>
+                        Fotógrafa, música e Instagramer Amplios conocimientos en creación de contenido audiovisual
+                    </p>
+                </div>
+                <div class="child">
+                    <img src="./css/recurses/Kevin Diaz 1x1.jpg" class="imagen" alt="">
+                    <h3>Kevin Diaz</h3>
+                    <p>
+                        Desarrollador web, youtuber y músico Amplios conocimientos en edición, producción de video y sonido.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="form-container">
+        <h3 class="titulo">
+            Contacto
+        </h3>
+        <form action="" class="formulario">
+            <input type="text" required name="Nombre" placeholder="Nombre:" id="">
+            <input type="email" required name="correo" placeholder="Correo:" id="">
+            <textarea name="mensje" id="" placeholder="Mensaje:"></textarea>
+            <input class="boton" type="submit" name="Enviar" value="Enviar">
+        </form>
+    </div>
+    <footer>
+        <div class="principal">
+            <div class="left">
+                <div class="logo">
+                    <img src="./css/recurses/Logo.png" alt="">
+                </div>
+                <div class="links">
+                    <a href="#">Acerca</a>
+                    <a href="#">Tecnologias</a>
+                    <a href="#">Proyecto</a>
+                    <a href="#">Contactos</a>
+                </div>
+            </div>
+            <div class="contacto">
+                <div class="contacto-mail">
+                    <img src="./css/recurses/mail.png" alt="">
+                    <p>contacto@seiton.com</p>
+                </div>
+                <div class="contacto-telefono">
+                    <img src="./css/recurses/phone.png" alt="">
+                    <p> (+598) 092847551</p>
+                </div>
+            </div>
+            <div class="social-media">
+                <div class="social-media-links">
+                    <a href="#" class="instagram"><img src="./css/recurses/instagram.png" alt=""></a>
+                    <a href="#" class="Linkedin"><img src="./css/recurses/in.png" alt=""></a>
+                    <a href="#" class="Facebook"><img src="./css/recurses/face.png" alt=""></a>
+                </div>
+                <div class="info-web-page">
+                    <p>
+                        Pagina desarrollada por el equipo de Seiton S.A
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+
+        </div>
+    </footer>
+</body>
+
 </html>
