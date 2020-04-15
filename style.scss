@@ -53,9 +53,8 @@ body {
 .aboutus {
     height: 100vh;
     padding: 0;
-    margin: 0;
+    margin-bottom: 250px;
     display: flex;
-    align-items: center;
     justify-content: center;
     article {
         max-width: 1000px;
@@ -63,12 +62,36 @@ body {
         flex-direction: column;
         align-items: center;
         font-family: sans-serif;
+        .subtitle {
+            padding-bottom: 3vh;
+            padding-top: 3vh;
+            ;
+            font-size: 3.2vh;
+            color: #8ce9f3;
+        }
+        .text {
+            font-size: 2.6vh;
+            padding-bottom: 1.5vh;
+            padding-top: 1.5vh;
+            text-align: center;
+            max-width: 90vh;
+            width: 100%;
+            font-family: Roboto;
+        }
+        span {
+            color: #77bbc1;
+        }
+        span:hover {
+            color: #8ce9f3;
+            text-decoration: underline;
+        }
     }
-    span {
+    .nos-tittle {
         font-weight: bold;
-        padding: 0;
-        margin: 0;
-        font-size: 42px;
+        font-size: 60px;
+        text-align: center;
+        margin: 30px 20px;
+        padding: 30px 20px;
     }
     p {
         width: 60%;
