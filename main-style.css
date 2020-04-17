@@ -102,7 +102,8 @@ body {
 .technologies .technologies-container {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   height: 60vh;
   max-width: 1000px;
   min-width: 1000px;
@@ -111,9 +112,10 @@ body {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
+  border-bottom: 2px solid #77bbc1;
+  margin-bottom: 1vh;
 }
 .technologies .technologies-container .left {
-  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,9 +127,15 @@ body {
 }
 .technologies .technologies-container .left .applications-webs {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 0.5px black solid;
+}
+.technologies .technologies-container .left .applications-webs img {
+  height: 24vh;
 }
 .technologies .technologies-container .right {
-  background-color: blue;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -136,6 +144,23 @@ body {
 .technologies .technologies-container .right p {
   font-size: 48px;
   font-weight: bold;
+}
+.technologies .technologies-container .right .technologies-rows {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  border: 0.5px black solid;
+}
+.technologies .technologies-container .right .technologies-rows .row {
+  display: flex;
+  flex-direction: row;
+}
+.technologies .technologies-container .right .technologies-rows .row img {
+  margin: 2vh;
+  background-color: black;
+  border-radius: 50%;
+  height: 20vh;
 }
 
 .workers {
