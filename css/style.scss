@@ -13,9 +13,9 @@ body {
     display: flex;
     font-family: sans-serif;
     flex-direction: column;
+    height: 100vh;
     align-items: center;
     justify-items: center;
-    background: url("./assets/header-background.jpg") no-repeat center;
     background-size: cover;
     background-color: rgba(119, 187, 193, 0.9);
     background-blend-mode: multiply;
@@ -23,11 +23,26 @@ body {
     color: white;
 }
 
+.capa-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    video {
+        min-width: 100%;
+        min-height: 100%;
+    }
+}
+
 .header-options {
     height: 7vh;
     padding-top: 3vh;
     font-size: 20px;
     max-width: 1000px;
+    position: absolute;
+    z-index: 1;
     a {
         padding-left: 2vw;
         padding-right: 2vw;
@@ -40,6 +55,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    z-index: 1;
     font-size: 108px;
     max-width: 1000px;
     span {
@@ -53,6 +70,8 @@ body {
 }
 
 .aboutus {
+    margin-top: 0;
+    margin: 100px;
     height: 100vh;
     padding: 0;
     margin-bottom: 250px;
