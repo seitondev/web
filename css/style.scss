@@ -37,11 +37,11 @@ body {
 }
 
 .header-options {
-    height: 7vh;
-    padding-top: 3vh;
+    display: flex;
+    height: 8vh;
+    padding-top: 2vh;
     font-size: 20px;
     max-width: 1000px;
-    position: absolute;
     z-index: 1;
     a {
         padding-left: 2vw;
@@ -57,7 +57,7 @@ body {
     align-items: center;
     position: absolute;
     z-index: 1;
-    font-size: 108px;
+    font-size: 150px;
     max-width: 1000px;
     span {
         border: 2px white solid;
@@ -69,10 +69,26 @@ body {
     }
 }
 
+.soporte {
+    display: flex;
+    height: 200px;
+    background-color: #212121;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto';
+    border: 2px $color-branding solid;
+    span {
+        color:  $color-branding;
+    }
+}
+
 .aboutus {
     margin-top: 0;
-    margin: 100px;
-    height: 100vh;
+    margin: 0 auto;
+    height: 100%;
     padding: 0;
     margin-bottom: 250px;
     display: flex;
@@ -88,7 +104,7 @@ body {
             padding-top: 3vh;
             ;
             font-size: 3.2vh;
-            color: #8ce9f3;
+            color: $color-branding;
         }
         .text {
             font-size: 2.6vh;
@@ -100,10 +116,10 @@ body {
             font-family: Roboto;
         }
         span {
-            color: #77bbc1;
+            color: #4346e4;
         }
         span:hover {
-            color: #8ce9f3;
+            color: #41c4d3;
             text-decoration: underline;
         }
     }
@@ -130,6 +146,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     height: 100vh;
     background-color: rgb(225, 225, 225);
     .technologies-container {
@@ -410,4 +427,121 @@ footer {
             color: white;
         }
     }
+}
+
+@media screen and (max-width: 1000px) { 
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        .left {
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        .right{
+            padding-bottom: 20px;
+            padding-top: 20px;
+            .social-media-links {
+                margin: 0 auto;
+                padding: 10px;
+                a {
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    margin: 0 auto;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .center{
+           padding-bottom: 20px;
+           padding-top: 20px;
+        }
+    }
+
+    .technologies { 
+        display: flex;
+        width: 100%;
+        min-width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        .technologies-container {
+            display: flex;
+            width: 100%;
+            min-width: 100%;
+            height: 100vh;
+            .right {
+                display: flex;
+                margin: 0;
+                padding: 0;
+
+            }
+            .left {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                .technologies-rows {
+                     .row {
+                        display: flex;
+                        flex-direction: row;
+                        img {
+                            background-color: black;
+                            border-radius: 50%;
+                            height: 20vh;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+   
+}
+
+
+@media screen and (max-width: 800px) { 
+    .technologies { 
+        display: flex;
+        width: 100%;
+        height: 1800px;
+        min-width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        .technologies-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-width: 100%;
+            height: 100vh;
+            .right {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+                margin-bottom: 150px;
+
+            }
+            .left {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                margin-bottom: 150px;
+                .technologies-rows {
+                     .row {
+                        display: flex;
+                        flex-direction: column;
+                        img {
+                            background-color: black;
+                            border-radius: 50%;
+                            height: 20vh;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
 }
