@@ -33,14 +33,20 @@ body {
 
 .header-options {
   display: flex;
+  justify-content: space-around;
   height: 8vh;
   padding-top: 2vh;
-  font-size: 20px;
+  font-size: 2vh;
   max-width: 1000px;
+  width: 1000px;
   z-index: 1; }
   .header-options a {
-    padding-left: 2vw;
-    padding-right: 2vw; }
+    padding-left: 1.5v;
+    padding-right: 1.5vh;
+    text-decoration: none;
+    color: white; }
+  .header-options a:hover {
+    color: #4baf99; }
 
 .seiton-title {
   height: 90vh;
@@ -362,6 +368,16 @@ footer {
       color: white; }
 
 @media screen and (max-width: 1000px) {
+  .header-options {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    height: 16vh; }
+    .header-options a {
+      margin-top: 20px;
+      text-decoration: underline; }
+
   footer {
     display: flex;
     flex-direction: column; }
@@ -442,5 +458,10 @@ footer {
             background-color: black;
             border-radius: 50%;
             height: 20vh; } }
+.secure {
+  background-color: black;
+  display: none; }
+  .secure span img {
+    height: 50px; }
 
 /*# sourceMappingURL=main-style.css.map */

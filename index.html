@@ -13,19 +13,19 @@
 <body>
     <header class="header">
         <article class="header-options">
-            <a>Acerca de</a>
-            <a>Tecnologias</a>
+            <a href="#aboutus">Acerca de</a>
+            <a href="technologies">Tecnologias</a>
             <a>Proyectos</a>
-            <a>Contacto</a>
+            <a href="#contacto">Contacto</a>
         </article>
         <div class="capa-video">
-            <video autoplay muted loop src="./css/video/seiton.mp4" ></video>
+            <video autoplay muted loop src="./css/video/seiton.mp4"></video>
         </div>
         <article class="seiton-title">
             <span>Seiton</span>
         </article>
     </header>
-    <section class="aboutus">
+    <section class="aboutus" id="aboutus">
         <article>
             <div class="nos-tittle">Nosotros</div>
             <div class="subtitle">¿A qué nos dedicamos?</div>
@@ -41,13 +41,12 @@
             <p></p>
         </article>
     </section>
-    <section class="technologies">
+    <section class="technologies" id="technologies">
         <div class="technologies-container">
             <article class="left">
                 <p>
                     APLICACIONES
-                    <br/>
-                    MÓVILES Y WEB
+                    <br/> MÓVILES Y WEB
                 </p>
                 <div class="applications-webs">
                     <img src="./css/assets/cellPhone.png" alt="" />
@@ -107,7 +106,7 @@
     </section>
     <section class="soporte">
         <div class="encabezado">
-            Damos a nuestros clientes<span> soporte 24/7</span> 
+            Damos a nuestros clientes<span> soporte 24/7</span>
         </div>
     </section>
     <div class="form-container">
@@ -121,7 +120,7 @@
             <input class="boton" type="submit" name="Enviar" value="Enviar">
         </form>
     </div>
-    <footer>
+    <footer class="contacto" id="contacto">
         <article class="left">
             <img class="logo" src="./css/assets/Logo.png" alt="">
             <div class="links">
@@ -160,6 +159,11 @@
             </div>
         </article>
     </footer>
+    <div class="secure">
+        <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=MQnw8C9M0vbwQIqIrQzw3WrRP395IYWMwpfjD5C0bLAypdYqhUee0dUXVm1z"></script></span>
+    </div>
+    <script src="./js/index.js"></script>
+
 </body>
 
 </html>
