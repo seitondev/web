@@ -2,6 +2,10 @@ $color-branding: #4baf99;
 $span-color: #4346e4;
 $span-color-hover: #41c4d3;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -41,10 +45,16 @@ body {
     padding-top: 2vh;
     font-size: 20px;
     max-width: 1000px;
-    z-index: 1;
-    a {
+    z-index: 2;
+    .link {
         padding-left: 2vw;
         padding-right: 2vw;
+        color: white;
+    }
+    .link:hover {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        cursor: pointer;
     }
 }
 
@@ -184,7 +194,7 @@ body {
                     width: 100%;
                     border-radius: 20px;
                     border: 0.5px black solid;
-                    .row {
+                    .technologies-row {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -207,60 +217,28 @@ body {
         background-size: cover;
         background-attachment: fixed;
         display: flex;
-        .content-father-one {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            .childs {
-                flex-direction: row;
-                flex-wrap: wrap;
+        .carousel-item {
+            width: 100vw;
+            .carousel-article {
                 display: flex;
-                justify-content: center;    
-                .child {
-                    display: flex;
+                flex-direction: column;
+                padding: calc(1vw + 1vh);
+                img {
+                    border-radius: 50%;
+                    width: 100%;
+                }
+                p {
+                    z-index: 1;
                     color: white;
-                    justify-content: center;
-                    flex-direction: column;
-                    align-items: center;
-                    width: 80vw;
-                    .imagen {
-                        width: 80vw;
-                        border-radius: 50%;
-                        border: 2px solid rgba(255, 255, 255, .8);
-                    }
-                    .imagen:hover {
-                        opacity: 100%;
-                        border: 2px solid rgb(75, 175, 153);
-                    }
-                    p {
-                        display: none;
-                        text-align: center;
-                        font-size: 25px;
-                        font-weight: 200;
-                    }
-                    h3:hover {
-                        color: rgb(75, 175, 153);
-                    }
-                    h3 {
-                        text-decoration: underline;
-                        font-size: 30px;
-                        text-align: center;
-                    }
+                    font-size: 24px;
+                    align-self: center;
+                    margin: 0;
+                    padding: 0;
                 }
             }
-            .title:hover {
-                color: rgb(75, 175, 153);
-            }
-            .title {
-                height: 100%;
-                color: white;
-                font-size: 60px;
-                text-align: center;
-                margin: 0;
-                padding: 0;
-                margin: 1vh;
-            }
+        }
+        .content-father-one {
+            display: none;
         }
     }
 
@@ -316,7 +294,7 @@ body {
         }
     }
 
-    footer {
+    .web-footer {
         background-color: black;
         display: flex;
         padding: 0;
@@ -338,9 +316,15 @@ body {
             flex: 1;
             font-family: sans-serif;
             color: white;
+            padding: 10px 0;
+            p {
+                margin: 0;
+                padding: 0;
+            }
             .contacto-mail {
                 display: flex;
                 align-items: center;
+                margin-bottom: 10px;
                 img {
                     height: 3vh;
                     margin-right: 1vw;
@@ -522,7 +506,7 @@ body {
                     width: 100%;
                     border-radius: 20px;
                     border: 0.5px black solid;
-                    .row {
+                    .technologies-row {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -586,9 +570,6 @@ body {
                         font-size: 25px;
                         font-weight: 200;
                     }
-                    h3:hover {
-                        color: rgb(75, 175, 153);
-                    }
                     h3 {
                         text-decoration: underline;
                         font-size: 40px;
@@ -611,6 +592,10 @@ body {
                 padding: 20px 20px;
             }
         }
+    }
+
+    .workers-carousel {
+        display: none;    
     }
     
     .form-container {
@@ -669,7 +654,7 @@ body {
         }
     }
 
-    footer {
+    .web-footer {
         background-color: black;
         display: flex;
         padding: 0;
@@ -691,9 +676,14 @@ body {
             flex: 1;
             font-family: sans-serif;
             color: white;
+            p {
+                margin: 0;
+                padding: 1vh 0;
+            }
             .contacto-mail {
                 display: flex;
                 align-items: center;
+                margin-bottom: 10px;
                 img {
                     height: 3vh;
                     margin-right: 1vw;
@@ -871,7 +861,7 @@ body {
                     background-color: white;
                     border-radius: 20px;
                     border: 0.5px black solid;
-                    .row {
+                    .technologies-row {
                         display: flex;
                         flex-direction: row;
                         img {
@@ -934,9 +924,6 @@ body {
                         font-size: 25px;
                         font-weight: 200;
                     }
-                    h3:hover {
-                        color: rgb(75, 175, 153);
-                    }
                     h3 {
                         text-decoration: underline;
                         font-size: 40px;
@@ -947,9 +934,6 @@ body {
                     }
                 }
             }
-            .title:hover {
-                color: rgb(75, 175, 153);
-            }
             .title {
                 height: 100%;
                 color: white;
@@ -959,6 +943,10 @@ body {
                 padding: 20px 20px;
             }
         }
+    }
+
+    .workers-carousel {
+        display: none;    
     }
 
     .form-container {
@@ -1017,7 +1005,7 @@ body {
         }
     }
 
-    footer {
+    .web-footer {
         background-color: black;
         display: flex;
         padding: 0;
@@ -1047,6 +1035,11 @@ body {
                     color: white;
                     text-decoration: none;
                 }
+                a:hover {
+                    color: rgba(255, 255, 255, 0.8);
+                    text-decoration: none;
+                    cursor: pointer;
+                }
             }
         }
         .center {
@@ -1057,9 +1050,14 @@ body {
             flex: 1;
             font-family: sans-serif;
             color: white;
+            p {
+                margin: 0;
+                padding: 0;
+            }
             .contacto-mail {
                 display: flex;
                 align-items: center;
+                margin-bottom: 10px;
                 img {
                     height: 3vh;
                     margin-right: 1vw;
