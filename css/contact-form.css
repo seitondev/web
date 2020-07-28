@@ -1,0 +1,35 @@
+.alert {
+    padding: 1em;
+    color: #fff;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    margin: 20px 100px;
+}
+
+.alert.error {
+    background: #F2DEDE;
+    border: 1px solid #a94442;
+    color: #a94442;
+}
+
+.alert.success {
+    background: #4CAF50;
+}
+
+.boton,
+form input[type="submit"] {
+    padding: 15px;
+    background: #ED572A;
+    color: #E1E9FA;
+    font-size: 1em;
+    font-family: "Roboto", Arial, sans-serif, helvetica;
+    border-radius: 2px;
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: #E64A19;
+}
